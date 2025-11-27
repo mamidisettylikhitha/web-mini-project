@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Availability</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>👨‍⚕️ Doctor Availability</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="doctor_availability.html">Doctor Availability</a>
+        <a href="departments.html">Departments</a>
+        <a href="patient_registration.html">Patient Registration</a>
+    </nav>
+
+    <section class="form-section">
+        <h2>Check Doctor Availability</h2>
+        <p>Fill the details below to check which doctors are available today.</p>
+
+        <form class="doctor-form">
+            <label>Choose Department:</label>
+            <select required>
+                <option value="">Select</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Dermatology</option>
+                <option>Pediatrics</option>
+            </select>
+
+            <label>Select Date:</label>
+            <input type="date" required>
+
+            <label>Preferred Time:</label>
+            <input type="time" required>
+
+            <button type="submit">Check Availability</button>
+        </form>
+
+        <div class="result-box">
+            <h3>Available Doctors Today</h3>
+            <ul>
+                <li>Dr. Arvind Kumar – 10:00 AM to 2:00 PM</li>
+                <li>Dr. Priya Sharma – 11:00 AM to 4:00 PM</li>
+                <li>Dr. Rakesh Rao – 9:00 AM to 1:00 PM</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2025 Hospital Management System | Doctor Availability</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📝 Patient Registration</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="doctor_availability.html">Doctor Availability</a>
+        <a href="departments.html">Departments</a>
+        <a href="patient_registration.html">Patient Registration</a>
+    </nav>
+
+    <section class="registration-section">
+        <h2>Register a New Patient</h2>
+        <p>Fill the form below to add a new patient to the hospital system.</p>
+
+        <form class="reg-form">
+
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter patient name" required>
+
+            <label>Age:</label>
+            <input type="number" placeholder="Enter age" required>
+
+            <label>Gender:</label>
+            <select required>
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label>Contact Number:</label>
+            <input type="tel" placeholder="Enter phone number" maxlength="10" required>
+
+            <label>Address:</label>
+            <textarea placeholder="Enter full address" rows="3" required></textarea>
+
+            <label>Choose Department:</label>
+            <select required>
+                <option value="">Select</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Dermatology</option>
+                <option>Pediatrics</option>
+                <option>General Medicine</option>
+            </select>
+
+            <label>Appointment Date:</label>
+            <input type="date" required>
+
+            <label>Problem Description:</label>
+            <textarea placeholder="Describe symptoms" rows="3"></textarea>
+
+            <button type="submit">Register Patient</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Hospital Management System | Patient Registration</p>
+    </footer>
+
+</body>
+</html>
